@@ -1,3 +1,6 @@
+#ifndef UTILS_H
+#define UTILS_H
+
 #include <string>
 #include <vector>
 
@@ -8,3 +11,5 @@ std::string trim_right(const std::string& s, const std::string& delimiters);
 std::string trim_left(const std::string& s, const std::string& delimiters);
 
 std::string trim(const std::string& s, const std::string& delimiters);
+
+#endif /* UTILS_H */

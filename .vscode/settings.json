@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        ".prettierrc": "json",
+        "iosfwd": "cpp",
+        "optional": "cpp",
+        "filesystem": "cpp"
+    }
+}

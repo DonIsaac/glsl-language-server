@@ -15,9 +15,18 @@ public:
     bool is_initialized();
     void set_initialized(bool new_value);
 
-    std::map<std::string, std::string>& documents();
+    std::map<std::string, std::string> &documents();
     void add_document(std::string key, std::string text);
     bool remove_document(std::string key);
+    /**
+     * @brief Updates the contents of a document within the workspace.
+     *
+     * @param key The name of the document
+     * @param text The new contents of the document
+     *
+     * @return true if a document exists under `key` is updated.
+     * @return false otherwise
+     */
     bool change_document(std::string key, std::string text);
 
 private:

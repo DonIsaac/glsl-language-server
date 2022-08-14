@@ -1,2 +1,6 @@
+# Compiled output
 build
+# Runtime logs
+log
+# Any caches
 *.cache
