@@ -21,16 +21,10 @@
 #include "messagebuffer.hpp"
 #include "workspace.hpp"
 #include "utils.hpp"
+#include "lib/appstate.hpp"
 
 using json = nlohmann::json;
 namespace fs = std::experimental::filesystem;
-
-struct AppState {
-    Workspace workspace;
-    bool verbose;
-    bool use_logfile;
-    std::ofstream logfile_stream;
-};
 
 std::string make_response(const json& response)
 {
